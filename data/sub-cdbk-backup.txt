@@ -1,0 +1,5179 @@
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      CODEBOOK
+
+
+                General Social Survey Cumulative Datafile 1972-2014
+                                          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page i
+
+
+                                      CONTENTS
+
+
+      item                                                                page
+
+      CASEID             ID Number                                           1
+      AGE                AGE OF RESPONDENT                                   1
+      SEX                RESPONDENTS SEX                                     1
+      RACE               RACE OF RESPONDENT                                  1
+      RACECEN1           WHAT IS RS RACE 1ST MENTION                         2
+      RACECEN2           WHAT IS RS RACE 2ND MENTION                         3
+      RACECEN3           WHAT IS RS RACE 3RD MENTION                         4
+      HISPANIC           HISPANIC SPECIFIED                                  5
+      RACEHISP           Race with Hispanic (2000 and later)                 6
+      ETHNIC             COUNTRY OF FAMILY ORIGIN                            7
+      ETH1               1ST MENTIONED COUNTRY OF ORIGIN                     7
+      ETH2               2ND MENTIONED COUNTRY OF ORIGIN                     7
+      ETH3               3RD MENTIONED COUNTRY OF ORIGIN                     7
+      ETHNUM             TYPE OF RESPONSE ABOUT ETHNICITY -- R               8
+      SPETHNIC           COUNTRY OF SPOUSES FAMILY ORIGIN                    8
+      SPETH1             1ST MENTIONED COUNTRY OF SPOUSES ORIGIN             8
+      SPETH2             2ND MENTIONED COUNTRY OF SPOUSES ORIGIN             8
+      SPETH3             3RD MENTIONED COUNTRY OF SPOUSES ORIGIN             9
+      SPETHNUM           TYPE OF RESPONSE ABOUT ETHNICITY -- SP              9
+      RACESEE            OBSERVED RACE                                      10
+      RACEDBTF           CERTAINTY OF OBSERVED RACE                         11
+      RACESELF           R's OWN RACIAL ID                                  11
+      DIFRACE1           WHY OBSERVATION DISAGREES SELF ID                  12
+      DIFRACE2           WHY OBSERVATION DISAGREES SELF ID                  13
+      DIFRACE3           WHY OBSERVATION DISAGREES SELF ID                  14
+      USCITZN            IS R US CITIZEN                                    14
+      FUCITZN            IS R PLANNING/APPLING FOR US CITIZENSHIP OR NOT    15
+      EDUC               HIGHEST YEAR OF SCHOOL COMPLETED                   15
+      PAEDUC             HIGHEST YEAR SCHOOL COMPLETED, FATHER              15
+      MAEDUC             HIGHEST YEAR SCHOOL COMPLETED, MOTHER              16
+      SPEDUC             HIGHEST YEAR SCHOOL COMPLETED, SPOUSE              16
+      DEGREE             RS HIGHEST DEGREE                                  16
+      PADEG              FATHERS HIGHEST DEGREE                             17
+      MADEG              MOTHERS HIGHEST DEGREE                             17
+      SPDEG              SPOUSES HIGHEST DEGREE                             18
+      ISCO68             RESPONDENT'S OCCUPATION, 1970 CENSUS               18
+      PAISCO68           R'S FATHER'S OCCUPATION, 1970 CENSUS               18
+      SPISCO68           R'S SPOUSE'S OCCUPATION, 1970 CENSUS               19
+      ISCO681            RESPONDENT'S OCCUPATION, 1980 CENSUS               19
+      PAISC681           R'S FATHER'S OCCUPATION, 1980 CENSUS               19
+      MAISC681           R'S MOTHER'S OCCUPATION, 1980 CENSUS               20
+      SPISC681           R'S SPOUSE'S OCCUPATION, 1980 CENSUS               20
+      ISCO88             RESPONDENT'S OCCUPATION, 1980 CENSUS & 1988 ISCO   20
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page ii
+
+
+      item                                                                page
+
+      PAISCO88           R'S FATHER'S OCCUPATION, 1980 CENSUS & 1988 ISCO   21
+      MAISCO88           R'S MOTHER'S OCCUPATION, 1980 CENSUS & 1988 ISCO   21
+      SPISCO88           R'S SPOUSE'S OCCUPATION, 1980 CENSUS & 1988 ISCO   21
+      SEI                RESPONDENT SOCIOECONOMIC INDEX                     22
+      FIRSTSEI           R'S SOCIOECONOMIC INDEX OF 1ST OCCUPATION          22
+      PASEI              R'S FATHER'S SOCIOECONOMIC INDEX                   22
+      MASEI              R'S MOTHER'S SOCIOECONOMIC INDEX                   23
+      SPSEI              R'S SPOUSE'S SOCIOECONOMIC INDEX                   23
+      EARNRS             HOW MANY IN FAMILY EARNED MONEY                    23
+      INCOME             TOTAL FAMILY INCOME                                24
+      RINCOME            RESPONDENTS INCOME                                 25
+      CONINC             FAMILY INCOME IN CONSTANT DOLLARS                  25
+      CONRINC            RESPONDENT INCOME IN CONSTANT DOLLARS              26
+      INCOME72           TOTAL FAMILY INCOME                                26
+      INCOME77           TOTAL FAMILY INCOME                                27
+      RINCOM77           RESPONDENTS INCOME                                 28
+      INCOME82           TOTAL FAMILY INCOME                                29
+      RINCOM82           RESPONDENTS INCOME                                 30
+      INCOME86           TOTAL FAMILY INCOME                                31
+      RINCOM86           RESPONDENTS INCOME                                 32
+      INCOME91           TOTAL FAMILY INCOME                                33
+      RINCOM91           RESPONDENTS INCOME                                 34
+      INCOME98           TOTAL FAMILY INCOME                                35
+      RINCOM98           RESPONDENTS INCOME                                 36
+      INCOME06           TOTAL FAMILY INCOME                                37
+      RINCOM06           RESPONDENTS INCOME                                 38
+      WEEKSWRK           WEEKS R. WORKED LAST YEAR                          39
+      PARTFULL           WAS R'S WORK PART-TIME OR FULL-TIME?               39
+      REGION             REGION OF INTERVIEW                                40
+      XNORCSIZ           EXPANDED N.O.R.C. SIZE CODE                        40
+      SRCBELT            SRC BELTCODE                                       41
+      SIZE               SIZE OF PLACE IN 1000S                             41
+      PARTYID            POLITICAL PARTY AFFILIATION                        41
+      VOTE68             DID R VOTE IN 1968 ELECTION                        42
+      PRES68             VOTE FOR HUMPHREY, NIXON, OR WALLACE               42
+      IF68WHO            WHO WOULD R HAVE VOTED FOR-1968 ELECTION           43
+      VOTE72             DID R VOTE IN 1972 ELECTION                        43
+      PRES72             VOTE FOR MCGOVERN OR NIXON                         44
+      IF72WHO            WHO WOULD R HAVE VOTED FOR-1972 ELECTION           44
+      VOTE76             DID R VOTE IN 1976 ELECTION                        45
+      PRES76             VOTE FOR CARTER OR FORD                            45
+      IF76WHO            WHO WOULD R HAVE VOTED FOR-1976 ELECTION           46
+      VOTE80             DID R VOTE IN 1980 ELECTION                        46
+      PRES80             VOTE FOR CARTER, REAGAN OR ANDERSON                47
+      IF80WHO            WHO WOULD R HAVE VOTED FOR-1980 ELECTION           47
+      VOTE84             DID R VOTE IN 1984 ELECTION                        48
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014             Page iii
+
+
+      item                                                                page
+
+      PRES84             VOTE FOR REAGAN OR MONDALE                         48
+      IF84WHO            WHO WOULD R HAVE VOTED FOR-1984 ELECTION           49
+      VOTE88             DID R VOTE IN 1988 ELECTION                        49
+      PRES88             VOTE FOR DUKAKIS OR BUSH                           50
+      IF88WHO            WHO WOULD R HAVE VOTED FOR-1988 ELECTION           50
+      VOTE92             DID R VOTE IN 1992 ELECTION                        51
+      PRES92             VOTE FOR CLINTON, BUSH, PEROT                      51
+      IF92WHO            WHO WOULD R HAVE VOTED FOR-1992 ELECTION           52
+      VOTE96             DID R VOTE IN 1996 ELECTION                        52
+      PRES96             VOTE FOR CLINTON, DOLE, PEROT                      53
+      IF96WHO            WHO WOULD R HAVE VOTED FOR-1996 ELECTION           53
+      VOTE00             DID R VOTE IN 2000 ELECTION                        54
+      PRES00             VOTE FOR GORE, BUSH, NADER                         54
+      IF00WHO            WHO WOULD R HAS VOTED FOR IN 2000 ELECTION         55
+      VOTE04             DID R VOTE IN 2004 ELECTION                        55
+      PRES04             VOTE FOR KERRY, BUSH, NADER                        56
+      IF04WHO            WHO WOULD R HAS VOTED FOR IN 2004 ELECTION         56
+      VOTE08             DID R VOTE IN 2008 ELECTION                        57
+      PRES08             VOTE OBAMA OR MCCAIN                               57
+      IF08WHO            WHO YOU WOULD HAVE VOTED FOR                       58
+      VOTE12             DID R VOTE IN 2012 ELECTION                        58
+      PRES12             VOTE OBAMA OR ROMNEY                               59
+      IF12WHO            WHO WOULD R HAVE VOTED FOR IN 2012 ELECTION        59
+      POLVIEWS           THINK OF SELF AS LIBERAL OR CONSERVATIVE           60
+      POLVIEWY           LIBERAL OR CONSERVATIVE-VERSION Y                  61
+      POLVIEWX           LIBERAL OR CONSERVATIVE-VERSION X                  61
+      NATSPAC            SPACE EXPLORATION PROGRAM                          62
+      NATENVIR           IMPROVING & PROTECTING ENVIRONMENT                 62
+      NATHEAL            IMPROVING & PROTECTING NATIONS HEALTH              63
+      NATCITY            SOLVING PROBLEMS OF BIG CITIES                     63
+      NATCRIME           HALTING RISING CRIME RATE                          64
+      NATDRUG            DEALING WITH DRUG ADDICTION                        64
+      NATEDUC            IMPROVING NATIONS EDUCATION SYSTEM                 65
+      NATRACE            IMPROVING THE CONDITIONS OF BLACKS                 65
+      NATARMS            MILITARY, ARMAMENTS, AND DEFENSE                   66
+      NATAID             FOREIGN AID                                        66
+      NATFARE            WELFARE                                            67
+      NATROAD            HIGHWAYS AND BRIDGES                               67
+      NATSOC             SOCIAL SECURITY                                    68
+      NATMASS            MASS TRANSPORTATION                                68
+      NATPARK            PARKS AND RECREATION                               69
+      COMPUSE            R USE COMPUTER                                     69
+      WEBMOB             R USES HOME INTERNET THROUGH MOBILE DEVICE         70
+      WEBTV              R HAS INTERNET VIA WEBTV                           70
+      EMAILMIN           EMAIL MINUTES PER WEEK                             70
+      EMAILHR            EMAIL HOURS PER WEEK                               71
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page iv
+
+
+      item                                                                page
+
+      USEWWW             R USE WWW OTHER THAN EMAIL                         71
+      WWWHR              WWW HOURS PER WEEK                                 71
+      WWWMIN             WWW MINUTES PER WEEK                               72
+      CHATHR             CHATROOM HOURS PER WEEK                            72
+      CHATMIN            CHATROOM MINUTES PER WEEK                          73
+      WWWSP              HAS ANYONE MET ON WEB BECOME SPOUSE                73
+      WWWGFBF            HAS ANYONE MET ON WEB BECOME PARTNER               74
+      WWWCOWRK           HAS ANYONE MET ON WEB BECOME COWORKER              74
+      WWWBIZ             HAS ANYONE MET ON WEB BECOME BUSINESS PARTNER      74
+      WWWNEI             HAS ANYONE MET ON WEN BECOME NEIGHBOR              75
+      WWWFRND            HAS ANYONE MET ON WEB BECOME FRIEND                75
+      WWWVOL             HAS ANYONE MET ON WEB BECOME VOLUNTEER WITH R      75
+      HLTHINFO           R SOUGHT HEALTH INFORMATION PAST YEAR              76
+      HLTHPAPR           R SOUGHT HEALTH INFORMATION NEWSPAPER ARTICLES     76
+      HLTHMAG1           R SOUGHT HEALTH INFORMATION GENERAL INTEREST MAG   77
+      HLTHMAG2           R SOUGHT HEALTH INFORMATION HEALTH MAGAZINES       77
+      HLTHDOC            R SOUGHT HEALTH INFORMATION DOCTOR OR NURSE        78
+      HLTHFREL           R SOUGHT HEALTH INFORMATION FRIENDS OR RELATIVES   78
+      HLTHTV             R SOUGHT HEALTH INFORMATION TV OR RADIO            79
+      HLTHWWW            R SOUGHT HEALTH INFORMATION WWW                    79
+      POLINFO            R SOUGHT POLITICAL INFORMATION PAST 2 YEARS        80
+      POLPAPR            R SOUGHT POLITICAL INFORMATION DAILY NEWSPAPER     80
+      POLMAG1            R SOUGHT POLITICAL INFO GENERAL INTEREST MAGAZIN   81
+      POLMAG2            R SOUGHT POLITICAL INFORMATION POLITICAL MAGAZI    81
+      POLTV              R SOUGHT POLITICAL INFORMATION TV OR RADIO         82
+      POLFREL            R SOUGHT POLITICAL INFORMATION FRIENDS OR RELAT    82
+      POLCAMP            R SOUGHT POLITICAL INFORMATION POLITICAL CAMPAI    83
+      POLWWW             R SOUGHT POLITICAL INFORMATION WWW                 83
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 1
+
+
+      CASEID             ID Number
+
+           Data type: numeric
+           Record/columns: 1/1-5
+
+      ________________________________________________________________________
+
+      AGE                AGE OF RESPONDENT
+
+           13. Respondent's age
+
+           VALUE  LABEL
+              89  89 OR OLDER
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/7-8
+
+      ________________________________________________________________________
+
+      SEX                RESPONDENTS SEX
+
+           23. Code respondent's sex
+
+           VALUE  LABEL
+               1  MALE
+               2  FEMALE
+
+           Data type: numeric
+           Missing-data code: 0
+           Record/column: 1/10
+
+      ________________________________________________________________________
+
+      RACE               RACE OF RESPONDENT
+
+           24. What race do you consider yourself?
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK
+               3  OTHER
+
+           Data type: numeric
+           Missing-data code: 0
+           Record/column: 1/12
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 2
+
+
+      RACECEN1           WHAT IS RS RACE 1ST MENTION
+
+           1602. What is your race? Indicate one or more races that you
+           consider yourself to be.
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK OR AFRICAN AMERICAN
+               3  AMERICAN INDIAN OR ALASKA NATIVE
+               4  ASIAN INDIAN
+               5  CHINESE
+               6  FILIPINO
+               7  JAPANESE
+               8  KOREAN
+               9  VIETNAMESE
+              10  OTHER ASIAN
+              11  NATIVE HAWAIIAN
+              12  GUAMANIAN OR CHAMORRO
+              13  SAMOAN
+              14  OTHER PACIFIC ISLANDER
+              15  SOME OTHER RACE
+              16  HISPANIC
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/14-15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 3
+
+
+      RACECEN2           WHAT IS RS RACE 2ND MENTION
+
+           1602. What is your race? Indicate one or more races that you
+           consider yourself to be.
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK OR AFRICAN AMERICAN
+               3  AMERICAN INDIAN OR ALASKA NATIVE
+               4  ASIAN INDIAN
+               5  CHINESE
+               6  FILIPINO
+               7  JAPANESE
+               8  KOREAN
+               9  VIETNAMESE
+              10  OTHER ASIAN
+              11  NATIVE HAWAIIAN
+              12  GUAMANIAN OR CHAMORRO
+              13  SAMOAN
+              14  OTHER PACIFIC ISLANDER
+              15  SOME OTHER RACE
+              16  HISPANIC
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/17-18
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 4
+
+
+      RACECEN3           WHAT IS RS RACE 3RD MENTION
+
+           1602. What is your race? Indicate one or more races that you
+           consider yourself to be.
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK OR AFRICAN AMERICAN
+               3  AMERICAN INDIAN OR ALASKA NATIVE
+               4  ASIAN INDIAN
+               5  CHINESE
+               6  FILIPINO
+               7  JAPANESE
+               8  KOREAN
+               9  VIETNAMESE
+              10  OTHER ASIAN
+              11  NATIVE HAWAIIAN
+              12  GUAMANIAN OR CHAMORRO
+              13  SAMOAN
+              14  OTHER PACIFIC ISLANDER
+              15  SOME OTHER RACE
+              16  HISPANIC
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/20-21
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 5
+
+
+      HISPANIC           HISPANIC SPECIFIED
+
+           1601. IF R IS FEMALE, READ LATINA; IF MALE, READ LATINO. Are you
+           Spanish, Hispanic, or Latino/Latina? IF YES: Which group are you
+           from?
+
+           VALUE  LABEL
+               0  IAP
+               1  NOT HISPANIC
+               2  MEXICAN, MEXICAN AMERICAN, CHICANO/A
+               3  PUERTO RICAN
+               4  CUBAN
+               5  SALVADORIAN
+               6  GUATEMALAN
+               7  PANAMANIAN
+               8  NICARAGUAN
+               9  COSTA RICAN
+              10  CENTRAL AMERICAN
+              11  HONDURAN
+              15  DOMINICAN
+              16  WEST INDIAN
+              20  PERUVIAN
+              21  EQUADORIAN
+              22  COLUMBIAN
+              23  VENEZUELAN
+              24  Argentinian
+              25  Chilean
+              30  SPANISH
+              31  BASQUE
+              35  FILIPINO/A
+              40  LATIN AMERICAN
+              41  SOUTH AMERICAN
+              45  LATIN
+              46  LATINO/A
+              47  HISPANIC
+              50  OTHER, NOT SPECIFIED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/23-24
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 6
+
+
+      RACEHISP           Race with Hispanic (2000 and later)
+
+           Recode of Race and Hispanic (2000 or later) into 4 categories.
+
+           Note that White does not include those who said they were Hispanic.
+           And Hispanic does not include those who said they were black.
+
+           Since GSS did not ask about Hispanic identification before the
+           2000 survey, this variable only has valid codes from 2000 and later.
+           Pre-2000 respondents are coded 9, which is defined as missing data.
+
+           ++
+           Created by RECODE version 3.5
+           on Apr 27, 2015  (Mon 08:59 AM PDT)
+
+           Input1:  RACE   label: RACE OF RESPONDENT
+           Input2:  HISPANIC   label: HISPANIC SPECIFIED
+           Input3:  YEAR   label: GSS YEAR FOR THIS RESPONDENT
+                    From study: /D3/GSS14
+
+             Output      Input1      Input2      Input3
+                  1           1     1,98-99      2000-*
+                  2           2          **      2000-*
+                  3         1,3        2-50      2000-*
+                  4           3          **      2000-*
+                  9          **           0      *-1999
+
+           All other combinations of input variables
+           were converted to MD: 9
+
+           VALUE  LABEL
+               1  White
+               2  Black
+               3  Hispanic
+               4  Other
+               9  Pre-2000
+
+           Data type: numeric
+           Missing-data code: 9
+           Record/column: 1/26
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 7
+
+
+      ETHNIC             COUNTRY OF FAMILY ORIGIN
+
+           1596. From what countries or part of the world did your
+           ancestors come?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/28-29
+
+      ________________________________________________________________________
+
+      ETH1               1ST MENTIONED COUNTRY OF ORIGIN
+
+           A. IF MORE THAN ONE COUNTRY NAMED:Which one of these countries
+           do you feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/31-32
+
+      ________________________________________________________________________
+
+      ETH2               2ND MENTIONED COUNTRY OF ORIGIN
+
+           A. IF MORE THAN ONE COUNTRY NAMED:Which one of these countries
+           do you feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/34-35
+
+      ________________________________________________________________________
+
+      ETH3               3RD MENTIONED COUNTRY OF ORIGIN
+
+           A. IF MORE THAN ONE COUNTRY NAMED:Which one of these countries
+           do you feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/37-38
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 8
+
+
+      ETHNUM             TYPE OF RESPONSE ABOUT ETHNICITY -- R
+
+           VALUE  LABEL
+               1  NAMES 1
+               2  CHOOSES 1 OF 2+
+               3  CANNOT CHOOSE 1
+               4  CANNOT NAME ANY
+               5  UNCODEABLE
+
+           Data type: numeric
+           Missing-data code: 5
+           Record/column: 1/40
+
+      ________________________________________________________________________
+
+      SPETHNIC           COUNTRY OF SPOUSES FAMILY ORIGIN
+
+           1598. From what countries or part of the world did your
+           (wife's/husband's) ancestors come?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/42-43
+
+      ________________________________________________________________________
+
+      SPETH1             1ST MENTIONED COUNTRY OF SPOUSES ORIGIN
+
+           1598a. IF MORE THAN ONE COUNTRY NAMED: Which one of these
+           countries does your (wife/husband) feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/45-46
+
+      ________________________________________________________________________
+
+      SPETH2             2ND MENTIONED COUNTRY OF SPOUSES ORIGIN
+
+           1598a. IF MORE THAN ONE COUNTRY NAMED: Which one of these
+           countries does your (wife/husband) feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/48-49
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014               Page 9
+
+
+      SPETH3             3RD MENTIONED COUNTRY OF SPOUSES ORIGIN
+
+           1598a. IF MORE THAN ONE COUNTRY NAMED: Which one of these
+           countries does your (wife/husband) feel closer to?
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/51-52
+
+      ________________________________________________________________________
+
+      SPETHNUM           TYPE OF RESPONSE ABOUT ETHNICITY -- SP
+
+           VALUE  LABEL
+               0  IAP
+               1  NAMES 1
+               2  CHOOSES 1 OF 2+
+               3  CANNOT CHOOSE 1
+               4  CANNOT NAME ANY
+               5  UNCODEABLE
+
+           Data type: numeric
+           Missing-data codes: 0,5
+           Record/column: 1/54
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 10
+
+
+      RACESEE            OBSERVED RACE
+
+           1600a. CODE RACE WITHOUT ASKING FOR ALL RESPONDENTS EVEN IF
+           UNCERTAIN
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK
+               3  OTHER
+               4  HISPANIC
+               5  BLACK AND WHITE
+               6  SPANISH
+               7  FILIPINO
+               8  AMERICAN INDIAN
+               9  ASIAN
+              10  YELLOW
+              11  MEXICAN
+              12  BROWN
+              13  LATINO
+              14  MIDDLE EASTERN
+              15  PUERTO RICAN
+              16  INDIAN
+              17  ALASKA NATIVE
+              18  PACIFIC ISLANDER
+              19  CUBAN
+              20  JAPANESE
+              21  ORIENTAL
+              22  TRINIDAD
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/56-57
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 11
+
+
+      RACEDBTF           CERTAINTY OF OBSERVED RACE
+
+           1600b. FOR THE RACIAL CLASSIFICATION YOU JUST ASSIGNED IN "A"
+           INDICATE HOW SURE YOU WERE OF RESPONDENT'S RACE.
+
+           VALUE  LABEL
+               0  IAP
+               1  NO DOUBT
+               2  SOME DOUBT, PRETTY SURE
+               3  A LOT OF DOUBT, PRETTY UNSURE
+               4  COMPLETELY UNSURE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/59
+
+      ________________________________________________________________________
+
+      RACESELF           R's OWN RACIAL ID
+
+           1600c. What race do you consider yourself?
+
+           VALUE  LABEL
+               0  IAP
+               1  WHITE
+               2  BLACK
+               3  OTHER
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/61
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 12
+
+
+      DIFRACE1           WHY OBSERVATION DISAGREES SELF ID
+
+           1603a. WHY DO YOU THINK YOUR RACIAL CLASSIFICATION OF THE
+           RESPONDENT IN "A" DIFFERED FROM THE RESPONDENT'S
+           SELF-CLASSIFICATION IN "C"?
+
+           VALUE  LABEL
+               0  IAP
+               1  R NOT SERIOUS
+               2  HISPANIC CHOSEN OVER WHITE
+               3  HISPANIC CHOSEN OVER BLACK
+               4  PHYSICALLY DOESN'T MATCH RACE
+               5  RACIALLY MIXED
+               6  R REJECTS RACIAL CATEGORIES
+               7  R REJECTS 'BLACK' LABEL
+               8  IS MARRIED TO MEMBER OF ANOTHER RACE
+               9  WHITE OR BLACK CHOSEN OVER HISPANIC
+              10  FEELINGS, NOT BIOLOGY MATTERS
+              11  IDENTIFIES WITH OTHER THAN 'REAL' RACE
+              12  OTHER HISPANIC COMPLICATIONS
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/column: 1/63
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 13
+
+
+      DIFRACE2           WHY OBSERVATION DISAGREES SELF ID
+
+           1603a. WHY DO YOU THINK YOUR RACIAL CLASSIFICATION OF THE
+           RESPONDENT IN "A" DIFFERED FROM THE RESPONDENT'S
+           SELF-CLASSIFICATION IN "C"?
+
+           VALUE  LABEL
+               0  IAP
+               1  R NOT SERIOUS
+               2  HISPANIC CHOSEN OVER WHITE
+               3  HISPANIC CHOSEN OVER BLACK
+               4  PHYSICALLY DOESN'T MATCH RACE
+               5  RACIALLY MIXED
+               6  R REJECTS RACIAL CATEGORIES
+               7  R REJECTS 'BLACK' LABEL
+               8  IS MARRIED TO MEMBER OF ANOTHER RACE
+               9  WHITE OR BLACK CHOSEN OVER HISPANIC
+              10  FEELINGS, NOT BIOLOGY MATTERS
+              11  IDENTIFIES WITH OTHER THAN 'REAL' RACE
+              12  OTHER HISPANIC COMPLICATIONS
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/65-66
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 14
+
+
+      DIFRACE3           WHY OBSERVATION DISAGREES SELF ID
+
+           1603a. WHY DO YOU THINK YOUR RACIAL CLASSIFICATION OF THE
+           RESPONDENT IN "A" DIFFERED FROM THE RESPONDENT'S
+           SELF-CLASSIFICATION IN "C"?
+
+           VALUE  LABEL
+               0  IAP
+               1  R NOT SERIOUS
+               2  HISPANIC CHOSEN OVER WHITE
+               3  HISPANIC CHOSEN OVER BLACK
+               4  PHYSICALLY DOESN'T MATCH RACE
+               5  RACIALLY MIXED
+               6  R REJECTS RACIAL CATEGORIES
+               7  R REJECTS 'BLACK' LABEL
+               8  IS MARRIED TO MEMBER OF ANOTHER RACE
+               9  WHITE OR BLACK CHOSEN OVER HISPANIC
+              10  FEELINGS, NOT BIOLOGY MATTERS
+              11  IDENTIFIES WITH OTHER THAN 'REAL' RACE
+              12  OTHER HISPANIC COMPLICATIONS
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/68-69
+
+      ________________________________________________________________________
+
+      USCITZN            IS R US CITIZEN
+
+           Now we would like to ask you about U.S. citizenship. Are you...
+           IF RESPONDENT SAYS S/HE IS "NATURALIZED," CODE "A U.S. CITIZEN."
+
+           VALUE  LABEL
+               0  IAP
+               1  A U.S. Citizen
+               2  Not a U.S. Citizen
+               3  A U.S. CITIZEN BORN IN PUERTO RICO, THE U.S. VIRGIN ISLANDS, OR THE NORTHERN MARIANAS ISLANDS
+               4  BORN OUTSIDE OF THE UNITED STATES TO PARENTS WHO WERE U.S CITIZENS AT THAT TIME (IF VOLUNTEERED)
+               8  DONT KNOW
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/71
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 15
+
+
+      FUCITZN            IS R PLANNING/APPLING FOR US CITIZENSHIP OR NOT
+
+           Are you...
+
+           VALUE  LABEL
+               0  IAP
+               1  Currently applying for U.S. citizenship
+               2  Planning to apply for U.S. citizenship
+               3  Not planning to apply to U.S. citizenship
+               4  NOT ELIGIBLE TO BECOME A U.S. CITIZEN (IF VOLUNTEERED)
+               8  DONT KNOW
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/73
+
+      ________________________________________________________________________
+
+      EDUC               HIGHEST YEAR OF SCHOOL COMPLETED
+
+           15. What is the highest grade in elementary school or high
+           school that you finished and got credit for?
+
+           VALUE  LABEL
+              97  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 97,98,99
+           Record/columns: 1/75-76
+
+      ________________________________________________________________________
+
+      PAEDUC             HIGHEST YEAR SCHOOL COMPLETED, FATHER
+
+           16. What is the highest grade in elementary school or high
+           school that your father finished and got credit for?
+
+           VALUE  LABEL
+              97  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 97,98,99
+           Record/columns: 1/78-79
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 16
+
+
+      MAEDUC             HIGHEST YEAR SCHOOL COMPLETED, MOTHER
+
+           17. What is the highest grade in elementary school or high
+           school that your mother finished and got credit for?
+
+           VALUE  LABEL
+              97  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 97,98,99
+           Record/columns: 1/81-82
+
+      ________________________________________________________________________
+
+      SPEDUC             HIGHEST YEAR SCHOOL COMPLETED, SPOUSE
+
+           18. What is the highest grade in elementary school or high
+           school that your husband/wife finished and got credit for?
+
+           VALUE  LABEL
+              97  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 97,98,99
+           Record/columns: 1/84-85
+
+      ________________________________________________________________________
+
+      DEGREE             RS HIGHEST DEGREE
+
+           19. If finished 9th-12th grade: Did you ever get a high school
+           diploma or a GED certificate?
+
+           VALUE  LABEL
+               0  LT HIGH SCHOOL
+               1  HIGH SCHOOL
+               2  JUNIOR COLLEGE
+               3  BACHELOR
+               4  GRADUATE
+               7  IAP
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 7,8,9
+           Record/column: 1/87
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 17
+
+
+      PADEG              FATHERS HIGHEST DEGREE
+
+           20. If finished 9th-12th grade: Did he ever get a high school
+           diploma or a GED certificate?
+
+           VALUE  LABEL
+               0  LT HIGH SCHOOL
+               1  HIGH SCHOOL
+               2  JUNIOR COLLEGE
+               3  BACHELOR
+               4  GRADUATE
+               7  IAP
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 7,8,9
+           Record/column: 1/89
+
+      ________________________________________________________________________
+
+      MADEG              MOTHERS HIGHEST DEGREE
+
+           21. If finished 9th-12th grade: Did she ever get a high school
+           diploma or a GED certificate?
+
+           VALUE  LABEL
+               0  LT HIGH SCHOOL
+               1  HIGH SCHOOL
+               2  JUNIOR COLLEGE
+               3  BACHELOR
+               4  GRADUATE
+               7  IAP
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 7,8,9
+           Record/column: 1/91
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 18
+
+
+      SPDEG              SPOUSES HIGHEST DEGREE
+
+           22. If finished 9th-12th grade: Did he/she ever get a high
+           school diploma or a GED certificate?
+
+           VALUE  LABEL
+               0  LT HIGH SCHOOL
+               1  HIGH SCHOOL
+               2  JUNIOR COLLEGE
+               3  BACHELOR
+               4  GRADUATE
+               7  IAP
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 7,8,9
+           Record/column: 1/93
+
+      ________________________________________________________________________
+
+      ISCO68             RESPONDENT'S OCCUPATION, 1970 CENSUS
+
+           1635. Respondent's occupation (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/95-98
+
+      ________________________________________________________________________
+
+      PAISCO68           R'S FATHER'S OCCUPATION, 1970 CENSUS
+
+           1636. Occupation of respondent's father (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/100-103
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 19
+
+
+      SPISCO68           R'S SPOUSE'S OCCUPATION, 1970 CENSUS
+
+           1637. Occupation of respondent's spouse (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/105-108
+
+      ________________________________________________________________________
+
+      ISCO681            RESPONDENT'S OCCUPATION, 1980 CENSUS
+
+           1638. Respondent's occupation (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/110-113
+
+      ________________________________________________________________________
+
+      PAISC681           R'S FATHER'S OCCUPATION, 1980 CENSUS
+
+           1639. Occupation of respondent's father (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/115-118
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 20
+
+
+      MAISC681           R'S MOTHER'S OCCUPATION, 1980 CENSUS
+
+           1640. Occupation of respondent's mother (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/120-123
+
+      ________________________________________________________________________
+
+      SPISC681           R'S SPOUSE'S OCCUPATION, 1980 CENSUS
+
+           1641. Occupation of respondent's spouse (International Standard
+           Classification Codes-1968)
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+
+           Data type: numeric
+           Missing-data codes: 0,9998
+           Record/columns: 1/125-128
+
+      ________________________________________________________________________
+
+      ISCO88             RESPONDENT'S OCCUPATION, 1980 CENSUS & 1988 ISCO CODE
+
+           1642. Respondent's Occupation, 1988 Census
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+            9999  NA
+
+           Data type: numeric
+           Missing-data codes: 0,9998,9999
+           Record/columns: 1/130-133
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 21
+
+
+      PAISCO88           R'S FATHER'S OCCUPATION, 1980 CENSUS & 1988 ISCO CODE
+
+           1643. Respondent's Father's Occupation, 1988 Census
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+            9999  NA
+
+           Data type: numeric
+           Missing-data codes: 0,9998,9999
+           Record/columns: 1/135-138
+
+      ________________________________________________________________________
+
+      MAISCO88           R'S MOTHER'S OCCUPATION, 1980 CENSUS & 1988 ISCO CODE
+
+           1644. Respondent's Mother's Occupation, 1988 Census
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+            9999  NA
+
+           Data type: numeric
+           Missing-data codes: 0,9998,9999
+           Record/columns: 1/140-143
+
+      ________________________________________________________________________
+
+      SPISCO88           R'S SPOUSE'S OCCUPATION, 1980 CENSUS & 1988 ISCO CODE
+
+           1645. Respondent's Spouse's Occupation, 1988 Census
+
+           VALUE  LABEL
+               0  IAP
+            9998  DK
+            9999  NA
+
+           Data type: numeric
+           Missing-data codes: 0,9998,9999
+           Record/columns: 1/145-148
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 22
+
+
+      SEI                RESPONDENT SOCIOECONOMIC INDEX
+
+           1646. Respondent socioeconomic index.
+
+           VALUE  LABEL
+              -1  IAP
+            99.8  DK
+            99.9  NA
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: -1.0,99.0,99.0
+           Record/columns: 1/150-153
+
+      ________________________________________________________________________
+
+      FIRSTSEI           R'S SOCIOECONOMIC INDEX OF 1ST OCCUPATION
+
+           1647. Socioeconomic index of respondent's first occupation.
+
+           VALUE  LABEL
+              -1  IAP
+            99.8  DK
+            99.9  NA
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: -1.0,99.0,99.0
+           Record/columns: 1/155-158
+
+      ________________________________________________________________________
+
+      PASEI              R'S FATHER'S SOCIOECONOMIC INDEX
+
+           1648. Socioeconomic index of respondent's father.
+
+           VALUE  LABEL
+              -1  IAP
+            99.8  DK
+            99.9  NA
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: -1.0,99.0,99.0
+           Record/columns: 1/160-163
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 23
+
+
+      MASEI              R'S MOTHER'S SOCIOECONOMIC INDEX
+
+           1649. Socioeconomic index of respondent's mother.
+
+           VALUE  LABEL
+              -1  IAP
+            99.8  DK
+            99.9  NA
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: -1.0,99.0,99.0
+           Record/columns: 1/165-168
+
+      ________________________________________________________________________
+
+      SPSEI              R'S SPOUSE'S SOCIOECONOMIC INDEX
+
+           1650. Socioeconomic index of respondent's spouse.
+
+           VALUE  LABEL
+              -1  IAP
+            99.8  DK
+            99.9  NA
+
+           Data type: numeric
+           Decimals: 1
+           Missing-data codes: -1.0,99.0,99.0
+           Record/columns: 1/170-173
+
+      ________________________________________________________________________
+
+      EARNRS             HOW MANY IN FAMILY EARNED MONEY
+
+           36. Just thinking about your family now -- those people in the
+           househol who are related to you -- how many persons in the
+           family, including yourself, earned any money last year from any
+           job or employment?
+
+           VALUE  LABEL
+               8  EIGHT OR MORE
+               9  NA
+
+           Data type: numeric
+           Missing-data code: 9
+           Record/column: 1/175
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 24
+
+
+      INCOME             TOTAL FAMILY INCOME
+
+           37. In which of these groups did your total family income, from
+           all sources, fall last year before taxes, that is?
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000 TO 2999
+               3  $3000 TO 3999
+               4  $4000 TO 4999
+               5  $5000 TO 5999
+               6  $6000 TO 6999
+               7  $7000 TO 7999
+               8  $8000 TO 9999
+               9  $10000 - 14999
+              10  $15000 - 19999
+              11  $20000 - 24999
+              12  $25000 OR MORE
+              13  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,13-99
+           Record/columns: 1/177-178
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 25
+
+
+      RINCOME            RESPONDENTS INCOME
+
+           38. Did you earn any income from [OCCUPATION DESCRIBED IN Q2]
+           last year? a. If yes: In which of these groups did your earnings
+           from [OCCUPATION IN Q2] for last year fall? That is, before
+           taxes or other deductions.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000 TO 2999
+               3  $3000 TO 3999
+               4  $4000 TO 4999
+               5  $5000 TO 5999
+               6  $6000 TO 6999
+               7  $7000 TO 7999
+               8  $8000 TO 9999
+               9  $10000 - 14999
+              10  $15000 - 19999
+              11  $20000 - 24999
+              12  $25000 OR MORE
+              13  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,13-99
+           Record/columns: 1/180-181
+
+      ________________________________________________________________________
+
+      CONINC             FAMILY INCOME IN CONSTANT DOLLARS
+
+           1657. Inflation-adjusted family income.
+
+            VALUE  LABEL
+                0  IAP
+           999998  DONT KNOW
+           999999  NA
+
+           Data type: numeric
+           Decimals: 8
+           Missing-data codes: 0,999999,999998
+           Record/columns: 1/183-197
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 26
+
+
+      CONRINC            RESPONDENT INCOME IN CONSTANT DOLLARS
+
+           1658. Inflation-adjusted personal income.
+
+            VALUE  LABEL
+                0  IAP
+           999998  DONT KNOW
+           999999  NA
+
+           Data type: numeric
+           Decimals: 7
+           Missing-data codes: 0,999999,999998
+           Record/columns: 1/199-212
+
+      ________________________________________________________________________
+
+      INCOME72           TOTAL FAMILY INCOME
+
+           In which of these groups did your total family income, from
+           all sources, fall last year, before taxes, that is?
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $2000
+               2  $2000 TO $3999
+               3  $4000 TO $5999
+               4  $6000 TO $7999
+               5  $8000 TO $9999
+               6  $10000 TO $12499
+               7  $12500 TO $14999
+               8  $15000 TO $17499
+               9  $17500 TO $19999
+              10  $20000 TO $24999
+              11  $25000 TO $29999
+              12  $30000+
+              13  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,13-99
+           Record/columns: 1/214-215
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 27
+
+
+      INCOME77           TOTAL FAMILY INCOME
+
+           Family income on 1977-1980 surveys
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-49999
+              16  $50000 +
+              17  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,17-99
+           Record/columns: 1/217-218
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 28
+
+
+      RINCOM77           RESPONDENTS INCOME
+
+           Respondent's income on 1977/78/80 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-49999
+              16  $50000 +
+              17  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,17-99
+           Record/columns: 1/220-221
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 29
+
+
+      INCOME82           TOTAL FAMILY INCOME
+
+           Family income on 1982-85 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-34999
+              16  $35000-49999
+              17  $50000 +
+              18  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,18-99
+           Record/columns: 1/223-224
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 30
+
+
+      RINCOM82           RESPONDENTS INCOME
+
+           Respondent's income on 1982-85 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-34999
+              16  $35000-49999
+              17  $50000 +
+              18  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,18-99
+           Record/columns: 1/226-227
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 31
+
+
+      INCOME86           TOTAL FAMILY INCOME
+
+           Family income on 1986-90 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-29999
+              16  $30000-34999
+              17  $35000-39999
+              18  $40000-49999
+              19  $50000-59999
+              20  $60000+
+              21  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,21-99
+           Record/columns: 1/229-230
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 32
+
+
+      RINCOM86           RESPONDENTS INCOME
+
+           Respondent's income on 1986-90 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-29999
+              16  $30000-34999
+              17  $35000-39999
+              18  $40000-49999
+              19  $50000-59999
+              20  $60000+
+              21  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,21-99
+           Record/columns: 1/232-233
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 33
+
+
+      INCOME91           TOTAL FAMILY INCOME
+
+           Family income on the 1991-96 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-29999
+              16  $30000-34999
+              17  $35000-39999
+              18  $40000-49999
+              19  $50000-59999
+              20  $60000-74999
+              21  $75000+
+              22  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,22-99
+           Record/columns: 1/235-236
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 34
+
+
+      RINCOM91           RESPONDENTS INCOME
+
+           Respondent's income on the 1991-96 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  LT $1000
+               2  $1000-2999
+               3  $3000-3999
+               4  $4000-4999
+               5  $5000-5999
+               6  $6000-6999
+               7  $7000-7999
+               8  $8000-9999
+               9  $10000-12499
+              10  $12500-14999
+              11  $15000-17499
+              12  $17500-19999
+              13  $20000-22499
+              14  $22500-24999
+              15  $25000-29999
+              16  $30000-34999
+              17  $35000-39999
+              18  $40000-49999
+              19  $50000-59999
+              20  $60000-74999
+              21  $75000+
+              22  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,22-99
+           Record/columns: 1/238-239
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 35
+
+
+      INCOME98           TOTAL FAMILY INCOME
+
+           Family income on the 1998, 2000, 2002 and 2004 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  UNDER $1 000
+               2  $1 000 TO 2 999
+               3  $3 000 TO 3 999
+               4  $4 000 TO 4 999
+               5  $5 000 TO 5 999
+               6  $6 000 TO 6 999
+               7  $7 000 TO 7 999
+               8  $8 000 TO 9 999
+               9  $10000 TO 12499
+              10  $12500 TO 14999
+              11  $15000 TO 17499
+              12  $17500 TO 19999
+              13  $20000 TO 22499
+              14  $22500 TO 24999
+              15  $25000 TO 29999
+              16  $30000 TO 34999
+              17  $35000 TO 39999
+              18  $40000 TO 49999
+              19  $50000 TO 59999
+              20  $60000 TO 74999
+              21  $75000 TO $89999
+              22  $90000 - $109999
+              23  $110000 OR OVER
+              24  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,24-99
+           Record/columns: 1/241-242
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 36
+
+
+      RINCOM98           RESPONDENTS INCOME
+
+           Respondent's income on the 1998, 2000, 2002 and 2004 surveys.
+
+           VALUE  LABEL
+               0  IAP
+               1  UNDER $1 000
+               2  $1 000 TO 2 999
+               3  $3 000 TO 3 999
+               4  $4 000 TO 4 999
+               5  $5 000 TO 5 999
+               6  $6 000 TO 6 999
+               7  $7 000 TO 7 999
+               8  $8 000 TO 9 999
+               9  $10000 TO 12499
+              10  $12500 TO 14999
+              11  $15000 TO 17499
+              12  $17500 TO 19999
+              13  $20000 TO 22499
+              14  $22500 TO 24999
+              15  $25000 TO 29999
+              16  $30000 TO 34999
+              17  $35000 TO 39999
+              18  $40000 TO 49999
+              19  $50000 TO 59999
+              20  $60000 TO 74999
+              21  $75000 TO $89999
+              22  $90000 - $109999
+              23  $110000 OR OVER
+              24  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,24-99
+           Record/columns: 1/244-245
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 37
+
+
+      INCOME06           TOTAL FAMILY INCOME
+
+           In which of these groups did your total family income, from
+           all sources, fall last year before taxes, that is.
+
+           VALUE  LABEL
+               0  IAP
+               1  UNDER $1 000
+               2  $1 000 TO 2 999
+               3  $3 000 TO 3 999
+               4  $4 000 TO 4 999
+               5  $5 000 TO 5 999
+               6  $6 000 TO 6 999
+               7  $7 000 TO 7 999
+               8  $8 000 TO 9 999
+               9  $10000 TO 12499
+              10  $12500 TO 14999
+              11  $15000 TO 17499
+              12  $17500 TO 19999
+              13  $20000 TO 22499
+              14  $22500 TO 24999
+              15  $25000 TO 29999
+              16  $30000 TO 34999
+              17  $35000 TO 39999
+              18  $40000 TO 49999
+              19  $50000 TO 59999
+              20  $60000 TO 74999
+              21  $75000 TO $89999
+              22  $90000 TO $109999
+              23  $110000 TO $129999
+              24  $130000 TO $149999
+              25  $150000 OR OVER
+              26  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,26-99
+           Record/columns: 1/247-248
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 38
+
+
+      RINCOM06           RESPONDENTS INCOME
+
+           In which of these groups did your earnings from [OCCUPATION]
+           from all sources for [last year] fall? That is, before taxes or
+           other deductions.
+
+           VALUE  LABEL
+               0  IAP
+               1  UNDER $1 000
+               2  $1 000 TO 2 999
+               3  $3 000 TO 3 999
+               4  $4 000 TO 4 999
+               5  $5 000 TO 5 999
+               6  $6 000 TO 6 999
+               7  $7 000 TO 7 999
+               8  $8 000 TO 9 999
+               9  $10000 TO 12499
+              10  $12500 TO 14999
+              11  $15000 TO 17499
+              12  $17500 TO 19999
+              13  $20000 TO 22499
+              14  $22500 TO 24999
+              15  $25000 TO 29999
+              16  $30000 TO 34999
+              17  $35000 TO 39999
+              18  $40000 TO 49999
+              19  $50000 TO 59999
+              20  $60000 TO 74999
+              21  $75000 TO $89999
+              22  $90000 TO $109999
+              23  $110000 TO $129999
+              24  $130000 TO $149999
+              25  $150000 OR OVER
+              26  REFUSED
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,26-99
+           Record/columns: 1/250-251
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 39
+
+
+      WEEKSWRK           WEEKS R. WORKED LAST YEAR
+
+           175. Now I'd like to ask you about last year. How many weeks did
+           you work either full-time or part-time not counting work around
+           the house? (Include paid vacations and sick leave.)
+
+           VALUE  LABEL
+              -1  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -1,98,99
+           Record/columns: 1/253-254
+
+      ________________________________________________________________________
+
+      PARTFULL           WAS R'S WORK PART-TIME OR FULL-TIME?
+
+           175a. When you worked last year, was it usually full or part
+           time?
+
+           VALUE  LABEL
+               0  IAP
+               1  FULL-TIME
+               2  PART-TIME
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/256
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 40
+
+
+      REGION             REGION OF INTERVIEW
+
+           VALUE  LABEL
+               0  NOT ASSIGNED
+               1  NEW ENGLAND
+               2  MIDDLE ATLANTIC
+               3  E. NOR. CENTRAL
+               4  W. NOR. CENTRAL
+               5  SOUTH ATLANTIC
+               6  E. SOU. CENTRAL
+               7  W. SOU. CENTRAL
+               8  MOUNTAIN
+               9  PACIFIC
+
+           Data type: numeric
+           Missing-data code: 0
+           Record/column: 1/258
+
+      ________________________________________________________________________
+
+      XNORCSIZ           EXPANDED N.O.R.C. SIZE CODE
+
+           VALUE  LABEL
+               0  NOT ASSIGNED
+               1  CITY GT 250000
+               2  CITY,50-250000
+               3  SUBURB, LRG CITY
+               4  SUBURB, MED CITY
+               5  UNINC,LRG CITY
+               6  UNINC,MED CITY
+               7  CITY,10-49999
+               8  TOWN GT 2500
+               9  SMALLER AREAS
+              10  OPEN COUNTRY
+
+           Data type: numeric
+           Missing-data code: 0
+           Record/columns: 1/260-261
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 41
+
+
+      SRCBELT            SRC BELTCODE
+
+           VALUE  LABEL
+               0  NOT ASSIGNED
+               1  12 LRGST SMSA'S
+               2  SMSA'S 13-100
+               3  SUBURB, 12 LRGST
+               4  SUBURB, 13-100
+               5  OTHER URBAN
+               6  OTHER RURAL
+
+           Data type: numeric
+           Missing-data code: 0
+           Record/column: 1/263
+
+      ________________________________________________________________________
+
+      SIZE               SIZE OF PLACE IN 1000S
+
+           VALUE  LABEL
+              -1  NOT ASSIGNED
+
+           Data type: numeric
+           Missing-data code: -1
+           Record/columns: 1/265-268
+
+      ________________________________________________________________________
+
+      PARTYID            POLITICAL PARTY AFFILIATION
+
+           56. Generally speaking, do you usually think of yourself as a
+           Republican, Democrat, Independent, or what?
+
+           VALUE  LABEL
+               0  STRONG DEMOCRAT
+               1  NOT STR DEMOCRAT
+               2  IND,NEAR DEM
+               3  INDEPENDENT
+               4  IND,NEAR REP
+               5  NOT STR REPUBLICAN
+               6  STRONG REPUBLICAN
+               7  OTHER PARTY
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 8,9
+           Record/column: 1/270
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 42
+
+
+      VOTE68             DID R VOTE IN 1968 ELECTION
+
+           57. Now in 1968, you remember that Humphrey ran for President on
+           the Democratic ticket against Nixon for the Republicans, and
+           Wallace as an Independent. Do you remember for sure whether or
+           not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/272
+
+      ________________________________________________________________________
+
+      PRES68             VOTE FOR HUMPHREY, NIXON, OR WALLACE
+
+           57a. If voted: Did you vote for Humphrey, Nixon, or Wallace?
+
+           VALUE  LABEL
+               0  IAP
+               1  HUMPHREY
+               2  NIXON
+               3  WALLACE
+               4  OTHER
+               5  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/274
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 43
+
+
+      IF68WHO            WHO WOULD R HAVE VOTED FOR-1968 ELECTION
+
+           57b. If did not vote: Who would you have voted for, for
+           President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  HUMPHREY
+               2  NIXON
+               3  WALLACE
+               4  OTHER
+               5  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/276
+
+      ________________________________________________________________________
+
+      VOTE72             DID R VOTE IN 1972 ELECTION
+
+           58. In 1972, you remember that McGovern ran for President on the
+           Democratic ticket against Nixon for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/278
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 44
+
+
+      PRES72             VOTE FOR MCGOVERN OR NIXON
+
+           58a. If voted: Did you vote for McGovern or Nixon?
+
+           VALUE  LABEL
+               0  IAP
+               1  MCGOVERN
+               2  NIXON
+               3  OTHER
+               4  REFUSED
+               5  WOULDNT VOTE
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/280
+
+      ________________________________________________________________________
+
+      IF72WHO            WHO WOULD R HAVE VOTED FOR-1972 ELECTION
+
+           58b. If did not vote: Who would you have voted for, for
+           President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  MCGOVERN
+               2  NIXON
+               3  OTHER
+               4  REFUSED
+               5  WOULDNT VOTE
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/282
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 45
+
+
+      VOTE76             DID R VOTE IN 1976 ELECTION
+
+           59. In 1976, you remember that Carter ran for President on the
+           Democratic ticket against Ford for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/284
+
+      ________________________________________________________________________
+
+      PRES76             VOTE FOR CARTER OR FORD
+
+           59a. If voted: Did you vote for Carter or Ford?
+
+           VALUE  LABEL
+               0  IAP
+               1  CARTER
+               2  FORD
+               3  OTHER
+               4  REFUSED
+               5  NO PRES. VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/286
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 46
+
+
+      IF76WHO            WHO WOULD R HAVE VOTED FOR-1976 ELECTION
+
+           59b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  CARTER
+               2  FORD
+               3  OTHER
+               4  REFUSED
+               5  WOULDNT VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/288
+
+      ________________________________________________________________________
+
+      VOTE80             DID R VOTE IN 1980 ELECTION
+
+           60. In 1980, you remember that Carter ran for President on the
+           Democratic ticket against Reagan for the Republicans, and
+           Anderson as an Independent. Do you remember for sure whether or
+           not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/290
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 47
+
+
+      PRES80             VOTE FOR CARTER, REAGAN OR ANDERSON
+
+           60a. If voted: Did you vote for Carter, Reagan, or Anderson?
+
+           VALUE  LABEL
+               0  IAP
+               1  CARTER
+               2  REAGAN
+               3  ANDERSON
+               4  OTHER
+               5  REFUSED
+               6  DIDNT VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/292
+
+      ________________________________________________________________________
+
+      IF80WHO            WHO WOULD R HAVE VOTED FOR-1980 ELECTION
+
+           60b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  CARTER
+               2  REAGAN
+               3  ANDERSON
+               4  OTHER
+               5  WOULDNT VOTE
+               7  REFUSED
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/294
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 48
+
+
+      VOTE84             DID R VOTE IN 1984 ELECTION
+
+           61. In 1984, you remember that Mondale ran for President on the
+           Democratic ticket against Reagan for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/296
+
+      ________________________________________________________________________
+
+      PRES84             VOTE FOR REAGAN OR MONDALE
+
+           61a. If voted: Did you vote for Mondale or Reagan?
+
+           VALUE  LABEL
+               0  IAP
+               1  MONDALE
+               2  REAGAN
+               3  OTHER
+               4  REFUSED
+               5  NO PRES. VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/298
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 49
+
+
+      IF84WHO            WHO WOULD R HAVE VOTED FOR-1984 ELECTION
+
+           61b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you have voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  MONDALE
+               2  REAGAN
+               3  OTHER
+               4  WOULDNT VOTE
+               5  REFUSED
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/300
+
+      ________________________________________________________________________
+
+      VOTE88             DID R VOTE IN 1988 ELECTION
+
+           62. In 1988, you remember that Dukakis ran for President on the
+           Democratic ticket against Bush for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               6  WLDNT VT-RELIG
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/302
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 50
+
+
+      PRES88             VOTE FOR DUKAKIS OR BUSH
+
+           62a. If voted: Did you vote for Dukakis or Bush?
+
+           VALUE  LABEL
+               0  IAP
+               1  DUKAKIS
+               2  BUSH
+               3  OTHER
+               4  REFUSED
+               5  NO PRES. VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/304
+
+      ________________________________________________________________________
+
+      IF88WHO            WHO WOULD R HAVE VOTED FOR-1988 ELECTION
+
+           62b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  DUKAKIS
+               2  BUSH
+               3  OTHER
+               4  WOULDNT VOTE
+               5  REFUSED
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/306
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 51
+
+
+      VOTE92             DID R VOTE IN 1992 ELECTION
+
+           63. In 1992, you remember that Clinton ran for President on the
+           Democratic ticket against Bush for the Republicans and Perot as
+           an independent. Do you remember for sure whether or not you
+           voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  NOT ELIGIBLE
+               4  REFUSED
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/308
+
+      ________________________________________________________________________
+
+      PRES92             VOTE FOR CLINTON, BUSH, PEROT
+
+           63a. If voted: Did you vote for Clinton, Bush,or Perot?
+
+           VALUE  LABEL
+               0  IAP
+               1  CLINTON
+               2  BUSH
+               3  PEROT
+               4  OTHER
+               6  NO PRES. VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/310
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 52
+
+
+      IF92WHO            WHO WOULD R HAVE VOTED FOR-1992 ELECTION
+
+           63b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  CLINTON
+               2  BUSH
+               3  PEROT
+               4  OTHER
+               5  WOULDNT VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/312
+
+      ________________________________________________________________________
+
+      VOTE96             DID R VOTE IN 1996 ELECTION
+
+           64. In 1996, you remember that Clinton ran for president on the
+           Democratic ticket against Dole for the Republicans and Perot for
+           the Reform Party. Do you remember for sure whether or not you
+           voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  INELIGIBLE
+               4  REFUSED TO ANSWR
+               8  DONT KNOW/REMMBR
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/314
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 53
+
+
+      PRES96             VOTE FOR CLINTON, DOLE, PEROT
+
+           64a. If voted: Did you vote for Clinton, Bush, or Perot?
+
+           VALUE  LABEL
+               0  IAP
+               1  CLINTON
+               2  DOLE
+               3  PEROT
+               4  OTHER (SPECIFY)
+               6  DIDNT VOTE
+               8  DONT KNOW
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/316
+
+      ________________________________________________________________________
+
+      IF96WHO            WHO WOULD R HAVE VOTED FOR-1996 ELECTION
+
+           64b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  CLINTON
+               2  DOLE
+               3  PEROT
+               4  OTHER
+               8  DONT KNOW/RMEMBR
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/318
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 54
+
+
+      VOTE00             DID R VOTE IN 2000 ELECTION
+
+           65. In 2000, you remember that Gore ran for President on the
+           Democratic ticket against Bush for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  INELIGIBLE
+               4  REFUSED TO ANSWER
+               8  DONT KNOW/REMEMBER
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/320
+
+      ________________________________________________________________________
+
+      PRES00             VOTE FOR GORE, BUSH, NADER
+
+           65a. If voted: Did you vote for Gore or Bush?
+
+           VALUE  LABEL
+               0  IAP
+               1  GORE
+               2  BUSH
+               3  NADER
+               4  OTHER (SPECIFY)
+               6  DIDNT VOTE
+               8  DONT KNOW
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/322
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 55
+
+
+      IF00WHO            WHO WOULD R HAS VOTED FOR IN 2000 ELECTION
+
+           65b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  GORE
+               2  BUSH
+               3  NADER
+               4  OTHER
+               8  DONT KNOW/REMEMBER
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/324
+
+      ________________________________________________________________________
+
+      VOTE04             DID R VOTE IN 2004 ELECTION
+
+           66. In 2004, you remember that Kerry ran for President on the
+           Democratic ticket against Bush for the Republicans. Do you
+           remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  VOTED
+               2  DID NOT VOTE
+               3  INELIGIBLE
+               4  REFUSED TO ANSWER
+               8  DONT KNOW/REMEMBER
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/326
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 56
+
+
+      PRES04             VOTE FOR KERRY, BUSH, NADER
+
+           66a. If voted: Did you vote for Kerry or Bush?
+
+           VALUE  LABEL
+               0  IAP
+               1  KERRY
+               2  BUSH
+               3  NADER
+               4  OTHER (SPECIFY)
+               6  DIDNT VOTE
+               8  DONT KNOW
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/328
+
+      ________________________________________________________________________
+
+      IF04WHO            WHO WOULD R HAS VOTED FOR IN 2004 ELECTION
+
+           66b. If did not vote or ineligible: Who would you have voted
+           for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  KERRY
+               2  BUSH
+               3  NADER
+               4  OTHER
+               8  DONT KNOW/REMEMBER
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/330
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 57
+
+
+      VOTE08             DID R VOTE IN 2008 ELECTION
+
+           In 2008, you remember that Obama ran for President on the Democratic ticket against McCain for the Republicans.
+                   Do you remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  Voted
+               2  Did not vote
+               3  Ineligible
+               8  DON'T KNOW
+               9  No answer
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/332
+
+      ________________________________________________________________________
+
+      PRES08             VOTE OBAMA OR MCCAIN
+
+           IF VOTED:  Did you vote for Obama or McCain?
+
+           VALUE  LABEL
+               0  IAP
+               1  Obama
+               2  McCain
+               3  OTHER CANDIDATE (SPECIFY)
+               4  DIDN'T VOTE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/334
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 58
+
+
+      IF08WHO            WHO YOU WOULD HAVE VOTED FOR
+
+           IF DID NOT VOTE OR INELIGIBLE:  Who would you have voted for, for President, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  Obama
+               2  McCain
+               3  Other
+               8  DON'T KNOW
+               9  No answer
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/336
+
+      ________________________________________________________________________
+
+      VOTE12             DID R VOTE IN 2012 ELECTION
+
+           Do you remember for sure whether or not you voted in that election?
+
+           VALUE  LABEL
+               0  IAP
+               1  Voted
+               2  Did not vote
+               3  Ineligible
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/338
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 59
+
+
+      PRES12             VOTE OBAMA OR ROMNEY
+
+           Did you vote for Obama or Romney?
+
+           VALUE  LABEL
+               0  IAP
+               1  Obama
+               2  Romney
+               3  Other candidate (SPECIFY)
+               5  Didn't vote for president
+               8  Don't know
+
+           Data type: numeric
+           Missing-data codes: 0,8
+           Record/column: 1/340
+
+      ________________________________________________________________________
+
+      IF12WHO            WHO WOULD R HAVE VOTED FOR IN 2012 ELECTION
+
+           Who would you have voted for, for president, if you had voted?
+
+           VALUE  LABEL
+               0  IAP
+               1  Obama
+               2  Romney
+               3  Other
+               8  Don't know
+
+           Data type: numeric
+           Missing-data codes: 0,8
+           Record/column: 1/342
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 60
+
+
+      POLVIEWS           THINK OF SELF AS LIBERAL OR CONSERVATIVE
+
+           67a. We hear a lot of talk these days about liberals and
+           conservatives. I'm going to show you a seven-point scale on
+           which the political views that people might hold are arranged
+           from extremely liberal - point 1 - to extremely conservative -
+           point 7. Where would you place yourself on this scale?
+
+           VALUE  LABEL
+               0  IAP
+               1  EXTREMELY LIBERAL
+               2  LIBERAL
+               3  SLIGHTLY LIBERAL
+               4  MODERATE
+               5  SLGHTLY CONSERVATIVE
+               6  CONSERVATIVE
+               7  EXTRMLY CONSERVATIVE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/344
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 61
+
+
+      POLVIEWY           LIBERAL OR CONSERVATIVE-VERSION Y
+
+           67b. We hear a lot of talk these days about liberals and
+           conservatives. I'm going to show you a seven-point scale on
+           which the political views that people might hold are arranged
+           from extremely liberal - point 1 - to extremely conservative -
+           point 7. Where would you place yourself on this scale, or
+           haven't you thought much about this?
+
+           VALUE  LABEL
+              -1  IAP
+               0  HAVENT THGHT ABT IT
+               1  EXTREMELY LIBERAL
+               2  LIBERAL
+               3  SLIGHTLY LIBERAL
+               4  MODERATE
+               5  SLGHTLY CONSERVATIVE
+               6  CONSERVATIVE
+               7  EXTRMLY CONSERVATIVE
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8.0-2.147483647E9
+           Record/columns: 1/346-362
+
+      ________________________________________________________________________
+
+      POLVIEWX           LIBERAL OR CONSERVATIVE-VERSION X
+
+           67c. In political matters, people talk of "the left" and "the
+           right." How would you place your views on this scale?
+
+           VALUE  LABEL
+               0  IAP
+               1  LEFT
+              10  RIGHT
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: 0,98,99
+           Record/columns: 1/364-365
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 62
+
+
+      NATSPAC            SPACE EXPLORATION PROGRAM
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. a. Space exploration
+           program.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/367
+
+      ________________________________________________________________________
+
+      NATENVIR           IMPROVING & PROTECTING ENVIRONMENT
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. b. Improving and
+           protecting the environment.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/369
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 63
+
+
+      NATHEAL            IMPROVING & PROTECTING NATIONS HEALTH
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. c. Improving and
+           protecting the nation's health.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/371
+
+      ________________________________________________________________________
+
+      NATCITY            SOLVING PROBLEMS OF BIG CITIES
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. d. Solving the problems
+           of the big cities.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/373
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 64
+
+
+      NATCRIME           HALTING RISING CRIME RATE
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. e. Halting the rising
+           crime rate.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/375
+
+      ________________________________________________________________________
+
+      NATDRUG            DEALING WITH DRUG ADDICTION
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. f. Dealing with drug
+           addiction.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/377
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 65
+
+
+      NATEDUC            IMPROVING NATIONS EDUCATION SYSTEM
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. g. Improving the
+           nation's education system.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/379
+
+      ________________________________________________________________________
+
+      NATRACE            IMPROVING THE CONDITIONS OF BLACKS
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. h. Improving the
+           conditions of Blacks.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/381
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 66
+
+
+      NATARMS            MILITARY, ARMAMENTS, AND DEFENSE
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. i. The military,
+           armaments and defense.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/383
+
+      ________________________________________________________________________
+
+      NATAID             FOREIGN AID
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. j. Foreign aid.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/385
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 67
+
+
+      NATFARE            WELFARE
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. k. Welfare.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/387
+
+      ________________________________________________________________________
+
+      NATROAD            HIGHWAYS AND BRIDGES
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. l. Highways and
+           bridges.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/389
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 68
+
+
+      NATSOC             SOCIAL SECURITY
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. m. Social Security.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/391
+
+      ________________________________________________________________________
+
+      NATMASS            MASS TRANSPORTATION
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. n. Mass Transportation.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/393
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 69
+
+
+      NATPARK            PARKS AND RECREATION
+
+           68. We are faced with many problems in this country, none of
+           which can be solved easily or inexpensively. I'm going to name
+           some of these problems, and for each one I'd like you to tell me
+           whether you think we're spending too much money on it, too
+           little money, or about the right amount. o. Parks and
+           recreation.
+
+           VALUE  LABEL
+               0  IAP
+               1  TOO LITTLE
+               2  ABOUT RIGHT
+               3  TOO MUCH
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/395
+
+      ________________________________________________________________________
+
+      COMPUSE            R USE COMPUTER
+
+           767. Do you personally ever use a computer at home, at work, or
+           at some other location?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/397
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 70
+
+
+      WEBMOB             R USES HOME INTERNET THROUGH MOBILE DEVICE
+
+           Do you have access to the Internet or World Wide Web in your home through a Internet-enabled mobile device like a smart phone, PDA, or BlackBerry?
+
+           VALUE  LABEL
+               0  IAP
+               1  Yes
+               2  No
+               8  DON'T KNOW
+               9  No answer
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/399
+
+      ________________________________________________________________________
+
+      WEBTV              R HAS INTERNET VIA WEBTV
+
+           767a. Do you have access to the Internet or World Wide Web in
+           your home through Web TV?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/401
+
+      ________________________________________________________________________
+
+      EMAILMIN           EMAIL MINUTES PER WEEK
+
+           767b. About how many minutes or hours per week do you spend
+           sending and answering electronic mail or e-mail?
+
+           VALUE  LABEL
+              -1  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -1,98,99
+           Record/columns: 1/403-404
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 71
+
+
+      EMAILHR            EMAIL HOURS PER WEEK
+
+           767b. About how many minutes or hours per week do you spend
+           sending and answering electronic mail or e-mail?
+
+           VALUE  LABEL
+              -1  IAP
+             998  DK
+             999  NA
+
+           Data type: numeric
+           Missing-data codes: -1,998,999
+           Record/columns: 1/406-408
+
+      ________________________________________________________________________
+
+      USEWWW             R USE WWW OTHER THAN EMAIL
+
+           768. Other than for e-mail, do you ever use the Internet or
+           World Wide Web?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/410
+
+      ________________________________________________________________________
+
+      WWWHR              WWW HOURS PER WEEK
+
+           769. Not counting e-mail, about how many minutes or hours per
+           week do you use the Web? (Include time you spend visiting
+           regular web sites and time spent using interactive Internet
+           services like chat rooms, Usenet groups, discussion forums,
+           bulletin boards, and the like.) a. Hours per week
+
+           VALUE  LABEL
+              -1  IAP
+             998  DK
+             999  NA
+
+           Data type: numeric
+           Missing-data codes: -1,998,999
+           Record/columns: 1/412-414
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 72
+
+
+      WWWMIN             WWW MINUTES PER WEEK
+
+           769. Not counting e-mail, about how many minutes or hours per
+           week do you use the Web? (Include time you spend visiting
+           regular web sites and time spent using interactive Internet
+           services like chat rooms, Usenet groups, discussion forums,
+           bulletin boards, and the like.) b. Minutes per week
+
+           VALUE  LABEL
+              -1  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -1,98,99
+           Record/columns: 1/416-417
+
+      ________________________________________________________________________
+
+      CHATHR             CHATROOM HOURS PER WEEK
+
+           770. Earlier you mentioned that you spend [number in answer to
+           Q.769] (minutes/hours) using the World Wide Web in a typical
+           week. About how many of those do you spend using chat rooms,
+           news groups, bulletin boards, discussion forums, and other forms
+           of on-line interaction with other Net users�not just browsing on
+           your own? a. Hours per week?
+
+           VALUE  LABEL
+              -1  IAP
+             998  DK
+             999  NA
+
+           Data type: numeric
+           Missing-data codes: -1,998,999
+           Record/columns: 1/419-421
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 73
+
+
+      CHATMIN            CHATROOM MINUTES PER WEEK
+
+           770. Earlier you mentioned that you spend [number in answer to
+           Q.769] (minutes/hours) using the World Wide Web in a typical
+           week. About how many of those do you spend using chat rooms,
+           news groups, bulletin boards, discussion forums, and other forms
+           of on-line interaction with other Net users�not just browsing on
+           your own? b. Minutes per week?
+
+           VALUE  LABEL
+              -1  IAP
+              98  DK
+              99  NA
+
+           Data type: numeric
+           Missing-data codes: -1,98,99
+           Record/columns: 1/423-424
+
+      ________________________________________________________________________
+
+      WWWSP              HAS ANYONE MET ON WEB BECOME SPOUSE
+
+           788. Did any of these people become: b. Spouse or partner?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/426
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 74
+
+
+      WWWGFBF            HAS ANYONE MET ON WEB BECOME PARTNER
+
+           788. Did any of these people become: b. Girlfriend or boyfriend?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/428
+
+      ________________________________________________________________________
+
+      WWWCOWRK           HAS ANYONE MET ON WEB BECOME COWORKER
+
+           788. Did any of these people become: d. Coworker
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/430
+
+      ________________________________________________________________________
+
+      WWWBIZ             HAS ANYONE MET ON WEB BECOME BUSINESS PARTNER
+
+           788. Did any of these people become: e. Other business
+           associate?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/432
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 75
+
+
+      WWWNEI             HAS ANYONE MET ON WEN BECOME NEIGHBOR
+
+           788. Did any of these people become: f. Neighbor?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/434
+
+      ________________________________________________________________________
+
+      WWWFRND            HAS ANYONE MET ON WEB BECOME FRIEND
+
+           788. Did any of these people become: g. Friend?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/436
+
+      ________________________________________________________________________
+
+      WWWVOL             HAS ANYONE MET ON WEB BECOME VOLUNTEER WITH R
+
+           788. Did any of these people become: h. Someone you worked with
+           on a civic, community, or political project?
+
+           VALUE  LABEL
+               0  IAP
+               1  YES
+               2  NO
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: 0,8,9
+           Record/column: 1/438
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 76
+
+
+      HLTHINFO           R SOUGHT HEALTH INFORMATION PAST YEAR
+
+           792. In the past year, that is, between (INSERT CURRENT MONTH)
+           1999/2001/2003 and (INSERT CURRENT MONTH) 2000/02�have you
+           looked for information about a health concern or medical
+           problem?
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/440-441
+
+      ________________________________________________________________________
+
+      HLTHPAPR           R SOUGHT HEALTH INFORMATION NEWSPAPER ARTICLES
+
+           793. If YES, please tell me if you tried to find such health
+           information from: a. Articles in a daily newspaper
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/443-444
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 77
+
+
+      HLTHMAG1           R SOUGHT HEALTH INFORMATION GENERAL INTEREST MAGAZINES
+
+           793. If YES, please tell me if you tried to find such health
+           information from: b. Articles in a general-interest magazine
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/446-447
+
+      ________________________________________________________________________
+
+      HLTHMAG2           R SOUGHT HEALTH INFORMATION HEALTH MAGAZINES
+
+           793. If YES, please tell me if you tried to find such health
+           information from: c. Special health or medical magazine or
+           newsletter
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/449-450
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 78
+
+
+      HLTHDOC            R SOUGHT HEALTH INFORMATION DOCTOR OR NURSE
+
+           793. If YES, please tell me if you tried to find such health
+           information from: d. A doctor, nurse, or other medical
+           professional
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/452-453
+
+      ________________________________________________________________________
+
+      HLTHFREL           R SOUGHT HEALTH INFORMATION FRIENDS OR RELATIVES
+
+           793. If YES, please tell me if you tried to find such health
+           information from: e. Friends or relatives
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/455-456
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 79
+
+
+      HLTHTV             R SOUGHT HEALTH INFORMATION TV OR RADIO
+
+           793. If YES, please tell me if you tried to find such health
+           information from: f. Radio or television programs
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/458-459
+
+      ________________________________________________________________________
+
+      HLTHWWW            R SOUGHT HEALTH INFORMATION WWW
+
+           793. If YES, please tell me if you tried to find such health
+           information from: g. The Internet or World Wide Web
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3-5 TIMES
+               3  6 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/461-462
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 80
+
+
+      POLINFO            R SOUGHT POLITICAL INFORMATION PAST 2 YEARS
+
+           794. In the past two years, that is, between (INSERT CURRENT
+           MONTH) 1998 and (INSERT CURRENT MONTH) 2000� have you looked for
+           information about the views or background of a candidate for
+           political office?
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/464-465
+
+      ________________________________________________________________________
+
+      POLPAPR            R SOUGHT POLITICAL INFORMATION DAILY NEWSPAPER
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: a. Articles in a daily newspaper
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/467-468
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 81
+
+
+      POLMAG1            R SOUGHT POLITICAL INFO GENERAL INTEREST MAGAZINES
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: b. Articles in general news magazines like
+           TIME, NEWSWEEK, or US NEWS
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/470-471
+
+      ________________________________________________________________________
+
+      POLMAG2            R SOUGHT POLITICAL INFORMATION POLITICAL MAGAZI
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: c. Special magazine or newsletter with
+           particular policy interest or perspective
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/473-474
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 82
+
+
+      POLTV              R SOUGHT POLITICAL INFORMATION TV OR RADIO
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: d. Radio or television programs
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/476-477
+
+      ________________________________________________________________________
+
+      POLFREL            R SOUGHT POLITICAL INFORMATION FRIENDS OR RELAT
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: e. Friends or relatives
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/479-480
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
+
+
+
+      General Social Survey Cumulative Datafile 1972-2014              Page 83
+
+
+      POLCAMP            R SOUGHT POLITICAL INFORMATION POLITICAL CAMPAI
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: f. Campaign materials from campaign worker or
+           candidate
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/482-483
+
+      ________________________________________________________________________
+
+      POLWWW             R SOUGHT POLITICAL INFORMATION WWW
+
+           795. If YES, please tell me if you looked for such candidate
+           information from: g. The Internet or World Wide Web
+
+           VALUE  LABEL
+              -1  IAP
+               0  NOT AT ALL
+               1  1 OR 2 TIMES
+               2  3 OR MORE TIMES
+               8  DK
+               9  NA
+
+           Data type: numeric
+           Missing-data codes: -1,8,9
+           Record/columns: 1/485-486
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                 September 29, 2015
